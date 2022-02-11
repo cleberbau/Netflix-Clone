@@ -26,9 +26,11 @@ header .container{
 }
 
 header .logo{
-    color: var(--vermelho);
+    /*color: var(--vermelho);
     font-family: 'arial black';
-    font-size: 40px;
+    font-size: 40px;*/
+    max-width: 120px;
+    padding: 10px;
   
 }
 
@@ -87,4 +89,13 @@ header nav a:hover{
 
 .botao i{
     margin-right: 10px;
+}
+
+.container{
+    margin-left: 20px;
+   
+}
+
+.filme-principal .container{
+    max-width: 50%;
 }

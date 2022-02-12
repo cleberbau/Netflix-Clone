@@ -14,9 +14,16 @@
 
 body{
     background:var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: arial;
     color:white;
 }
+
+h1{
+    margin-left: 20px;
+    padding:05px;
+    font-size: 20px;
+}
+
 
 header .container{
     display: flex;
@@ -38,6 +45,7 @@ header nav a{
     text-decoration: none;
     color:#aaa;
     margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header nav a:hover{
@@ -63,26 +71,52 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-bottom: 90px ;
     margin-top: 15px;
+    font-size: 12px;
 }
 
+@media screen and (min-width: 990px) {
+    .descricao {
+      width:70%;
+    }
+  }
+    
+}
 .titulo{
     margin-top: 15%;
     font-size: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.botao{
-    background-color:rgba(0, 0, 0, 0.5);
+.botao1{
+    background-color:rgba(255, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 15px 30px;
+    margin-left: 20px;
     margin-right: 15px;
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
 }
 
-.botao:hover{
+.botao2{
+    background-color:rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao1:hover{
+    background-color:white;
+    color: rgb(255, 0, 0);
+}
+
+.botao2:hover{
     background-color:white;
     color: black;
 }
@@ -98,4 +132,89 @@ header nav a:hover{
 
 .filme-principal .container{
     max-width: 50%;
+}
+
+.box-filme{
+    width:100%;
+    display:block;
+    transition:.3s;
+}
+
+.box-filme:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:30px ;
+     
+}
+
+.siga{
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+.final{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.git{
+     text-decoration: none;
+    color: bisque;    
+    }
+
+.be{
+    text-decoration: none;
+    color: bisque;    
+        }   
+.git:hover{
+    color:rgb(251, 255, 0);
+}
+.be:hover{
+    color:rgb(251, 255, 0);
+}
+.fa-brands fa-github{
+    margin-right: 10px;
+}
+
+#icon{
+    margin-right: 20px;
+}
+
+.dio{
+    text-decoration: none;
+   color: bisque;    
+   }
+.dio:hover{
+    color:rgb(251, 255, 0);
+}
+
+.assistir{
+    text-decoration: none;
+    color:white;
+
+}
+
+.assistir:hover{
+    color:red;
+}
+.informacao{
+    text-decoration: none;
+    color:white;
+}
+
+.informacao:hover{
+    color:rgb(0, 0, 0);
 }
